@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    background-image: url('girl_hood.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header .menu h1,
+.hero-section .content h1 {
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header .menu h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header .menu nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+header .menu nav a:hover {
+    color: orange;
+}
+
+.hero-section {
+    position: relative;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.content ol {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.content ol li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.content .buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content .btn {
+    display: inline-block;
+    background-color: #cc5800;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.content .btn:hover {
+    background-color: white;
+    color: blue;
+}
+
+.recommendations {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.recommendations h2 {
+    text-align: center;
+    color: orange;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.tile-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 300px;
+    height: 168px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tile img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.tile img:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.tile p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: orange;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: darkorange;
+}
+
+.hero-section .content h1 {
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.hero-section .content p,
+.hero-section .content ol li {
+    font-family: 'Playfair Display', serif;
+}
